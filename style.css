@@ -1,0 +1,116 @@
+body {
+    font-family: 'Roboto';
+    background-color:  rgb(221, 220, 220);
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav{
+    height: 80px;
+    background: rgb(41, 43, 74);
+}
+/*
+nav i .logoIcon {
+    color: rgb(221, 220, 220);
+    font-size: 35px;
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
+}*/
+
+nav ul{
+    float: right;
+    margin-right: 25px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+nav h1 {
+    font-size: 35px;
+    color: rgb(221, 220, 220);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+nav ul li a{
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0 20px;
+    color: rgb(221, 220, 220);
+    text-decoration: none; /* fjerner streken under */
+    display: inline; /* Usikker på om block er finere/bedre? */
+    font-weight: normal;
+    border: 2px solid transparent;
+    padding: 7px 10px;
+}
+nav ul li a:hover,
+nav ul li a.active {
+    border: 2px solid #DFA64A;
+    padding: 7px 10px;
+}
+label #btn,
+label #cancel{
+    color: rgb(221, 220, 220);
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 944px){
+    label #btn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #999bb5;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 40px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        color:  rgb(41, 43, 74);
+    }
+
+    #check:checked ~ ul{
+        left: 0%;
+
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~ label #cancel{
+        display: block;
+
+    }
+}
