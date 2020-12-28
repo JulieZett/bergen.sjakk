@@ -11,10 +11,26 @@ body {
 .section {
     margin-top: 30px;
     margin-left: 15px;
+    margin-right: 15px;
 }
 
 .section h1 {
     color: #2B273D;
+    margin-bottom: 18px;
+    font-size: 29px;
+}
+
+a {
+    color: #ffffff
+
+}
+a:hover,
+a:active{
+    color: #DFA64A;
+
+}
+i:hover{
+    color: #DFA64A;
 }
 
 nav{
@@ -41,6 +57,7 @@ nav ul li{
     display: inline-block;
     line-height: 80px;
     margin: 0 15px;
+    color: #fff;
 }
 nav h1 {
     font-size: 35px;
@@ -100,6 +117,17 @@ label #cancel{
         text-align: center;
         transition: all .5s;
     }
+    nav h1 {
+    font-size: 25px;
+    color: rgb(221, 220, 220);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
+    transition: .1s;
+}
     nav ul li{
         display: block;
         margin: 40px 0;
