@@ -29,26 +29,15 @@ a:active{
     color: #DFA64A;
 
 }
+/* Utgjør ingen forskjell, men var et forsøk på å få 
+alle iconene til å endre farge ved berøring */
 i:hover{
     color: #DFA64A;
 }
-
 nav{
     height: 80px;
     background: rgb(41, 43, 74);
 }
-/*
-nav i .logoIcon {
-    color: rgb(221, 220, 220);
-    font-size: 35px;
-    float: left;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding-left: 10px;
-    margin-top: 30px;
-    margin-left: 20px;
-}*/
-
 nav ul{
     float: right;
     margin-right: 25px;
