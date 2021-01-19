@@ -19,7 +19,8 @@ a:active{
 nav{
     height: 80px;
     background: rgb(41, 43, 74);
-}
+    position: sticky; /*husk å finne en løsning, hvorfor går det ikke med fixed?*/ 
+} 
 nav ul{
     float: right;
     margin-right: 25px;
@@ -29,6 +30,7 @@ nav ul li{
     line-height: 80px;
     margin: 0 15px;
     color: rgb(248, 248, 248);
+   
 }
 nav h1 {
     font-size: 35px;
@@ -37,8 +39,11 @@ nav h1 {
     font-weight: bold;
     text-transform: uppercase;
     padding-left: 10px;
-    margin-top: 30px;
+    margin-top: 30px; /*hvorfor puttet jeg ikke de sammen??? */
     margin-left: 20px;
+    white-space: nowrap;
+    
+    
 }
 
 nav ul li a{
@@ -98,7 +103,7 @@ label #cancel{
     margin-top: 30px;
     margin-left: 20px;
     transition: .1s;
-}
+    }
     nav ul li{
         display: block;
         margin: 40px 0;
@@ -109,8 +114,8 @@ label #cancel{
         color:  rgb(41, 43, 74);
         font-weight: bold;
     }
-    nav i:hover{
-        color: #DFA64A;
+    nav h1:hover{
+        color: #DFA64A; /* (tidligere i )*/
     }
     
 /* Utgjør ingen forskjell, men var et forsøk på å få 
@@ -128,6 +133,7 @@ alle iconene til å endre farge ved berøring */
 
     }
 }
+
 .forside {
     background-color: rgb(198, 197, 199);
     display: flex;
@@ -163,7 +169,6 @@ alle iconene til å endre farge ved berøring */
     flex-direction: column;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
     height: 90%;
     text-align: left;
     padding: 180px;
@@ -180,3 +185,9 @@ alle iconene til å endre farge ved berøring */
     text-align: left;
     padding: 180px;
 }
+
+
+
+
+
+  
